@@ -1,0 +1,17 @@
+{
+    "builds": [
+        {
+            "src": "initial.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "initial.py"
+        }
+    ],
+    "env": {
+        "PYTHONPATH": "."
+    }
+}
